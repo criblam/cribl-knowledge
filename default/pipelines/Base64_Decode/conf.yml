@@ -6,25 +6,17 @@ functions:
     filter: "true"
     disabled: null
     conf:
-      comment: >
+      comment: |
         Summary:  Decode a section of an event containing encoded data.
-
         Author: David Maislin & Brendan Dalpe
-
         Date: 2021-07-28
-
         Sample: Base64_Decode
 
-
         ° Mask:     https://docs.cribl.io/docs/mask-function
-
         ° C.Decode: https://docs.cribl.io/docs/cribl-reference#span-iddecode-cdecode--data-decoding-functions-span
-
         ° Character encodings: https://nodejs.org/api/buffer.html#buffer_buffers_and_character_encodings
 
-
         References:
-
         ° https://newbedev.com/regex-lookahead-lookbehind-and-atomic-groups
   - id: mask
     filter: "true"

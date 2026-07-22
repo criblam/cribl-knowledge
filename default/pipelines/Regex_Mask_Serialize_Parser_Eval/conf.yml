@@ -16,27 +16,17 @@ functions:
     filter: "true"
     disabled: null
     conf:
-      comment: >
-        Summary: How to parse fields with spaces from events without losing
-        valuable information
-
+      comment: |
+        Summary: How to parse fields with spaces from events without losing valuable information
         Author: David Maislin
-
         Date: 2021-07-28
-
         Sample: Regex_Mask_Serialize_Parser_Eval
 
-
         Parser: https://docs.cribl.io/docs/parser-function
-
         Regex Extract: https://docs.cribl.io/docs/regex-extract-function#usage
-
         Serialize: https://docs.cribl.io/docs/serialize-function
-
         Parser: https://docs.cribl.io/docs/parser-function
-
         Mask: https://docs.cribl.io/docs/mask-function
-
         Eval: https://docs.cribl.io/docs/eval-function
   - id: serde
     filter: "true"
@@ -47,8 +37,8 @@ functions:
       srcField: _raw
       cleanFields: false
       dstField: _raw
-    description: Leave off - Misses field names with spaces and drops fields with the same
-      name.
+    description: Leave off - Misses field names with spaces and drops fields with
+      the same name.
   - id: regex_extract
     filter: "true"
     disabled: false
@@ -130,8 +120,8 @@ functions:
         - name: _raw
           value: JSON.stringify(_raw)
     groupId: GBaewY
-    description: "Leave off if 10 is enabled: Why is a JSON object is smaller than a JSON
-      string?"
+    description: "Leave off if 10 is enabled: Why is a JSON object is smaller than a
+      JSON string?"
   - id: eval
     filter: "true"
     disabled: false
