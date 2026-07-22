@@ -1,0 +1,1 @@
+{"name":"cribl-knowledge-learning-pack","version":"1.0.1","minLogStreamVersion":"3.0.0","author":"David Maislin","description":"Real-world examples of everything","displayName":"The Cribl Knowledge Pack","tags":{"streamtags":[],"useCase":["reduction","routing","filtering","enrichment","aggregation"],"dataType":["logs"],"technology":["cisco","aws","paloalto"]}}
