@@ -6,32 +6,20 @@ functions:
     filter: "true"
     disabled: null
     conf:
-      comment: >-
-        Summary: Field extraction, regex lookup, unrolling arrays, adding tags,
-        and serializing the fields back to _raw.
-
+      comment: |-
+        Summary: Field extraction, regex lookup, unrolling arrays, adding tags, and serializing the fields back to _raw.
         Author: David Maislin
-
         Date: 2021-07-28
-
         Sample: Regex_Lookup_Unroll_Router
-
         Knowledge: Regex_Lookup_Unroll_Router.csv
-
 
         Note:  In Destinations create an Output Router with Filters Expressions that match the destination fields (destination=='splunk').  Source/Destinations will be added to packs soon!
 
-
         Regex Extract: https://docs.cribl.io/docs/regex-extract-function#usage
-
         Lookup: https://docs.cribl.io/docs/lookup-function
-
         Unroll: https://docs.cribl.io/docs/unroll-function
-
         Eval: https://docs.cribl.io/docs/eval-function
-
         Serialize: https://docs.cribl.io/docs/serialize-function
-
         Output Router: https://docs.cribl.io/docs/destinations-output-router
   - id: regex_extract
     filter: "true"
@@ -54,8 +42,8 @@ functions:
         - eventField: host
       ignoreCase: false
       file: Regex_Lookup_Unroll_Router.csv
-    description: Pass the host field to the lookup table and return all destinations as an
-      array
+    description: Pass the host field to the lookup table and return all destinations
+      as an array
   - id: unroll
     filter: "true"
     disabled: false

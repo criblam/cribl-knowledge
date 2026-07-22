@@ -6,18 +6,12 @@ functions:
     filter: "true"
     disabled: null
     conf:
-      comment: >-
-        Summary: Validates that the JSON data is compliant with the provided
-        schema.
-
+      comment: |-
+        Summary: Validates that the JSON data is compliant with the provided schema.
         Author: Brendan Dalpe
-
         Date: 2021-07-28
-
         Sample: Schema_Validation
-
         Knowledge: sample_schema
-
 
         ° C.Schema - https://docs.cribl.io/docs/cribl-reference#cschema--schema-functions
   - id: serde
@@ -28,8 +22,8 @@ functions:
       type: json
       srcField: _raw
       dstField: _raw
-    description: "Turn JSON string into an object literal.  Can be done with Eval Function:
-      JSON.parse(_raw) too."
+    description: "Turn JSON string into an object literal.  Can be done with Eval
+      Function: JSON.parse(_raw) too."
   - id: eval
     filter: "true"
     disabled: null

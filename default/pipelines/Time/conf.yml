@@ -6,16 +6,11 @@ functions:
     filter: "true"
     disabled: null
     conf:
-      comment: >+
-        Summary: Evaluating time with additional example of using strptime and
-        strftime
-
+      comment: |+
+        Summary: Evaluating time with additional example of using strptime and strftime
         Author: David Maislin
-
         Date: 2021-07-28
-
         Sample: Time (All samples work - _time= equals the current time)
-
 
         Note: Due to the nature of JSON serialization we lose some information about the data type of the field.
 
@@ -73,8 +68,8 @@ functions:
         - name: G_StrftimeStrptime_Example_c_ymd
           value: "C.Time.strftime(_time ? _time : Date.now() / 1000, '%Y/%m/%d')"
         - name: G_StrftimeStrptime_Example_d_verbose
-          value: "C.Time.strftime(_time,'YEAR: %Y month: %m day: %d HOUR: %H MIN: %M
-            SEC: %S MS: %L')"
+          value: "C.Time.strftime(_time,'YEAR: %Y month: %m day: %d HOUR: %H MIN: %M SEC:
+            %S MS: %L')"
         - name: H_Example_utc
           value: new Date().toUTCString()
         - name: H_Example_locale_string
@@ -89,5 +84,5 @@ functions:
           name: H_Example_time_string
       remove:
         - cribl_breaker
-    description: A_TIME1 is a date object, A_TIME2 is a date string.  They look the same,
-      but they are not equal
+    description: A_TIME1 is a date object, A_TIME2 is a date string.  They look the
+      same, but they are not equal

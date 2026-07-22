@@ -6,18 +6,13 @@ functions:
     filter: "true"
     disabled: null
     conf:
-      comment: >
+      comment: |
         Summary: Perform hex to number conversion using the Mask function.
-
         Author: Brendan Dalpe & David Maislin
-
         Date: 2021-07-28
-
         Sample: Mask_Hex_Decode
 
-
         ° Mask - https://docs.cribl.io/docs/mask-function
-
         ° C.Decode.hex - https://docs.cribl.io/docs/cribl-reference#span-iddecode-cdecode--data-decoding-functions-span
   - id: mask
     filter: "true"

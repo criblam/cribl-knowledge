@@ -3,8 +3,8 @@ groups:
   Nchw3l:
     name: "Option 1: Individual Functions"
     disabled: true
-    description: Extract the code, check if the code should be dropped, cleanup, lookup
-      regex, extract groups
+    description: Extract the code, check if the code should be dropped, cleanup,
+      lookup regex, extract groups
     index: 1
   KNry09:
     name: "Option 2: Using Individual Eval Functions"
@@ -22,23 +22,15 @@ functions:
     filter: "true"
     disabled: null
     conf:
-      comment: >-
-        Summary: Process Cisco ASA events, drop via lookup function, and use a
-        lookup to return a regex to extract fields.
-
+      comment: |-
+        Summary: Process Cisco ASA events, drop via lookup function, and use a lookup to return a regex to extract fields.
         Author: Jon Rust
-
         Date: 2021-07-28
-
         Sample: Regex_Variables_From_Lookups
-
         Knowledge: [asa_parsing.csv,asa_drops.csv]
 
-
         Drop: https://docs.cribl.io/docs/drop-function
-
         Flatten: https://docs.cribl.io/docs/drop-function
-
         Rename: https://docs.cribl.io/docs/rename-function
   - id: comment
     filter: "true"
@@ -197,11 +189,10 @@ functions:
           value: "C.Lookup('asa_drops.csv').match(ASA) ? '__DROPIT' :
             C.Lookup('asa_parsing.csv','asa_code').match(ASA,'regex')"
         - name: _raw
-          value: "__lookup_result != '__DROPIT' ? _raw.replace(/.*%ASA/,'%ASA') :
-            _raw"
+          value: "__lookup_result != '__DROPIT' ? _raw.replace(/.*%ASA/,'%ASA') : _raw"
         - name: groups
-          value: "__lookup_result != '__DROPIT' ? _raw.match(__lookup_result).groups
-            : undefined"
+          value: "__lookup_result != '__DROPIT' ? _raw.match(__lookup_result).groups :
+            undefined"
     groupId: tPNs66
   - id: drop
     filter: __lookup_result == '__DROPIT'
